@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="title">{{ categoria | titlecase }} - Productos</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <td><img [src]="producto.imagen" alt="{{ producto.nombre }}" class="product-image"></td>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.descripcion }}</td>
+        <td>${{ producto.precio }}</td>
+        <td>
+          <a [routerLink]="['/productos/tabla', categoria, producto.id]" class="product-btn">Ver Información</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

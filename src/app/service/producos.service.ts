@@ -13,37 +13,41 @@ export class ProducosService {
 
   getBellezaJoyeria(): Observable<any[]> {
     return this.http.get<{ bellezajoyeria: any[] }>(this.API_URL).pipe(
-      map(data => data.bellezajoyeria || []) 
+      map(data => data.bellezajoyeria || [])
     );
   }
 
   getTecnologia(): Observable<any[]> {
     return this.http.get<{ tecnologia: any[] }>(this.API_URL).pipe(
-      map(data => data.tecnologia || []) 
+      map(data => data.tecnologia || [])
     );
   }
 
   getElectrodomesticos(): Observable<any[]> {
     return this.http.get<{ electrodomesticos: any[] }>(this.API_URL).pipe(
-      map(data => data.electrodomesticos || []) 
+      map(data => data.electrodomesticos || [])
     );
   }
 
   getUtilesEscolares(): Observable<any[]> {
     return this.http.get<{ utilesescolares: any[] }>(this.API_URL).pipe(
-      map(data => data.utilesescolares || []) 
+      map(data => data.utilesescolares || [])
     );
   }
 
   getInstrumentosMusicales(): Observable<any[]> {
     return this.http.get<{ instrumentosmusicales: any[] }>(this.API_URL).pipe(
-      map(data => data.instrumentosmusicales || []) 
+      map(data => data.instrumentosmusicales || [])
     );
   }
 
   getAccesoriosMascotas(): Observable<any[]> {
     return this.http.get<{ accesoriosmascotas: any[] }>(this.API_URL).pipe(
-      map(data => data.accesoriosmascotas || []) 
+      map(data => data.accesoriosmascotas || [])
     );
+  }
+
+  getProductoPorCategoriaYId(categoria: string, id: number): Observable<any> {
+    return this.http.get(`${this.API_URL}/${categoria}/${id}`);
   }
 }

@@ -28,29 +28,15 @@ export class TablaProductosComponent implements OnInit {
   }
 
   cargarProductos() {
-    // Llama al servicio según la categoría seleccionada
-    switch (this.categoria) {
-      case 'belleza-joyeria':
-        this.producosService.getBellezaJoyeria().subscribe(p => this.productos = p);
-        break;
-      case 'tecnologia':
-        this.producosService.getTecnologia().subscribe(p => this.productos = p);
-        break;
-      case 'electrodomesticos':
-        this.producosService.getElectrodomesticos().subscribe(p => this.productos = p);
-        break;
-      case 'utiles-escolares':
-        this.producosService.getUtilesEscolares().subscribe(p => this.productos = p);
-        break;
-      case 'instrumentos':
-        this.producosService.getInstrumentosMusicales().subscribe(p => this.productos = p);
-        break;
-      case 'mascotas':
-        this.producosService.getAccesoriosMascotas().subscribe(p => this.productos = p);
-        break;
-      default:
-        this.productos = []; // Si la categoría no existe, muestra un array vacío
-        break;
-    }
+    // Usamos el método genérico para obtener los productos por categoría
+    this.producosService.getProductosPorCategoria(this.categoria).subscribe(
+      productos => {
+        this.productos = productos; // Asignamos los productos a la propiedad 'productos'
+      },
+      error => {
+        console.error('Error obteniendo productos:', error);
+        this.productos = []; // Si hay error, mostramos un array vacío
+      }
+    );
   }
 }

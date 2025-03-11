@@ -1,0 +1,21 @@
+<div class="producto-container">
+    <ng-container *ngIf="producto$ | async as producto; else loading">
+      <ng-container *ngIf="producto; else notFound">
+        <h2>{{ producto.nombre }}</h2>
+        <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen">
+        <p><strong>Descripción:</strong> {{ producto.descripcion }}</p>
+        <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+        <a routerLink="/productos/tabla/{{ categoria }}" class="volver-btn">Volver a la lista</a>
+      </ng-container>
+    </ng-container>
+    
+    <ng-template #loading>
+      <p>Cargando producto...</p>
+    </ng-template>
+  
+    <ng-template #notFound>
+      <p class="error-message">Producto no encontrado.</p>
+    </ng-template>
+  </div>
+
+  

@@ -41,7 +41,7 @@
         "nombre": "RATÓN INALÁMBRICO G502 X LIGHTSPEED PARA GAMING",
         "descripcion": "G502 X LIGHTSPEED es la última adición a la legendaria gama G502. Con nuestros primerísimos interruptores LIGHTFORCE híbridos óptico-mecánicos y un protocolo actualizado de tecnología inalámbrica LIGHTSPEED con una tasa de respuesta un 68% más rápida que la generación anterior.",
         "precio": 49.99,
-        "imagen": " https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502x-lightspeed/gallery/g502x-lightspeed-gallery-1-white.png?v=1"
+        "imagen": "https://i0.wp.com/www.tecnosmart.com.ec/wp-content/uploads/2024/09/MOU0633-0.jpg?fit=700%2C700&ssl=1"
       },
       {
         "id": 7,
@@ -74,70 +74,70 @@
     ],
     "electrodomesticos": [
       {
-        "id": 1,
+        "id": 11,
         "nombre": "Oster Licuadora 550W 2 Velocidades + Pulso con Vaso de Vidrio 1.5L",
         "descripcion": "La Licuadora Oster 550 W te permite aprovechar al máximo su potente motor de 550 vatios, que garantiza un rendimiento óptimo y resultados consistentes en cada uso. Con sus 2 velocidades diferentes, puedes ajustar la potencia según tus preferencias y la consistencia que deseas lograr en tus mezclas. Ya sea que necesites picar hielo, mezclar frutas y verduras, o preparar deliciosos batidos, esta licuadora es tu aliada perfecta.",
         "precio": 65.99,
         "imagen": "https://www.todohogar.com/219811/oster-licuadora-550w-2-velocidades-pulso-con-vaso-de-vidrio-15l.jpg"
       },
       {
-        "id": 2,
+        "id": 12,
         "nombre": "HORNO MICROONDAS SAMSUNG 23 LTS PANEL DIGITAL 1200W",
         "descripcion": "Microondas digital con grill, 11 niveles de potencia, temporizador de cocción, función de memoria y bloqueo para niños.",
         "precio": 89.99,
         "imagen": "https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_3000,f_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/7316b3b6-e21b-11ee-8d9b-beac93c30dbd.jpg"
       },
       {
-        "id": 3,
+        "id": 13,
         "nombre": "Cafetera programable con pantalla táctil de 12 tazas BVSTDC4403-013 Oster",
         "descripcion": "La Cafetera programable de 12 tazas con pantalla táctil de Oster® es un complemento elegante para cualquier cocina. Disfruta de la óptima funcionalidad para elegir la hora de preparación y qué tipo de café deseas, simplemente tocando la pantalla táctil.",
         "precio": 52.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2025/02/CAFETERA-CON-PANTALLA-TACTIL-PROGRAMABLE-DE-12-TAZAS-BVSTDC4403-013-OSTER-1-600x600.jpg"
       },
       {
-        "id": 4,
+        "id": 14,
         "nombre": "Aspiradora Trapeadora Robot Home-e Ultra Experience ERB40",
         "descripcion": "Con 3 modos de limpieza preprogramados y función manual. Selecciona según la necesidad de limpieza de cada zona determinada.",
         "precio": 159.99,
         "imagen": "https://electroluxec.vtexassets.com/arquivos/ids/157612/ASPIRADORA-ROBOT-ELECTROLUX-ERB40-REDONDA.jpg?v=638158023126600000"
       },
       {
-        "id": 5,
+        "id": 15,
         "nombre": "Vaporizador de ropa Hamilton Beach 11552 color blanco",
         "descripcion": "Potencia 1500 watts, elimina las arrugas y malos olores de la ropa está listo para usar en solo 45 segundos. Proporciona 90 minutos de vapor continuo con el colgador de ropa integrado, no necesita tabla de planchar y su manguera flexible. Ruedas para fácil transporte.",
         "precio": 85.49,
         "imagen": "https://www.kissu.com.ec/imagenes//productos/lg/16605990550.jpg"
       },
       {
-        "id": 6,
+        "id": 16,
         "nombre": "Ventilador T/Torre C/Remoto 120V/60Hz 36Plg",
         "descripcion": "Ventilador de torre blanco de 36 oscilatorio con 3 funciones de velocidad, pantalla LED intuitiva a blanco y negro y mando a distancia. Además de su elegante y moderno diseño cuenta con una funcion de temporizador para entrar en funcion tipo sleep o modo sueño en donde actuará de forma silenciosa ofreciendo una delicada y refrescante brisa al mismo tiempo que ahorra energía. Medidas del empaque: 19.5 x 92 x 17.5 cm. Peso: 2.51 kg. TRITON.",
         "precio": 83.99,
         "imagen": "https://kywiec.vtexassets.com/arquivos/ids/178802-800-auto?v=638388672238700000&width=800&height=auto&aspect=true"
       },
       {
-        "id": 7,
+        "id": 17,
         "nombre": "Refrigerador compacto Modelo HRF300",
         "descripcion": "Los refrigeradores compactos Hamilton Beach Commercial® les dan a sus huéspedes una forma sencilla de mantener sus refrigerios fríos, desde bebidas deportivas hasta botanas para los niños.",
         "precio": 189.99,
         "imagen": "https://hamiltonbeachcommercial.com/wp-content/uploads/2023/09/HRF300-scaled-1.jpg"
       },
       {
-        "id": 8,
+        "id": 18,
         "nombre": "Batidora de mano Oster 5V 2499-013 240 w",
         "descripcion": "Batidora De Mano 5V 2499-013 Blanco Oster de 5 velocidades para un control preciso al momento de preparas lo que más te gusta, función de potencia adicional, diseño ergonómico, practico botón para expulsar los batidores y potente motor de 240 watts.",
         "precio": 38.99,
         "imagen": "https://www.artefacta.com/media/catalog/product/1/0/103328_01_kta87mnomfpwdoho.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1040&width=1040&canvas=1040:1040"
       },
       {
-        "id": 9,
+        "id": 19,
         "nombre": "Horno Eléctrico Tostador Oster® Puertas 42 Litros Color Acero inoxidable",
         "descripcion": "Horno eléctrico con capacidad de 35 litros y 6 funciones de cocción.",
         "precio": 129.99,
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_916025-MLU77716970961_072024-O.webp"
       },
       {
-        "id": 10,
+        "id": 20,
         "nombre": "Freidora sin Aceite Negra Peabody PE-AF605N",
         "descripcion": "Temporizador mecánico de hasta 30 min. Temperatura regulable para diversos tipos de cocción entre 80°C y 200°C. Recipiente antiadherente para freír. 1400 W de potencia. Cocina sin humo ni olor.",
         "precio": 99.99,
@@ -146,70 +146,70 @@
     ],
     "utilesescolares": [
       {
-        "id": 1,
+        "id": 21,
         "nombre": "Mochila Escolar Juvenil BASIC PLUS Hurricane",
         "descripcion": "La mochila escolar juvenil BASIC PLUS, es una mochila de tamaño grande, ultraligera, con dos compartimentos principales, perfecta para llevar todos los accesorios del cole y para cualquier otra ocasión.",
         "precio": 49.99,
         "imagen": "https://coolpack.es/20609-large_default/mochila-basic-plus-hurricane.jpg"
       },
       {
-        "id": 2,
+        "id": 22,
         "nombre": "EASTHILL Estuche para lápices",
         "descripcion": "EASTHILL Estuche para lápices de gran capacidad para oficina, colegio, escuela, gran almacenamiento, bolsa de alta capacidad, caja organizadora, azul claro.",
         "precio": 9.99,
         "imagen": "https://m.media-amazon.com/images/I/71AO1n11YuL.jpg"
       },
       {
-        "id": 3,
+        "id": 23,
         "nombre": "Cuaderno Asamblea 16 x 21 cm x 120 hojas rayadas",
         "descripcion": "Cuaderno espiralado con tapa dura de 120 hojas de 70 grs rayadas. Línea: Office.",
         "precio": 2.99,
         "imagen": "https://libreriamaya.com.ar/img/productos/8098/5c702c6c4d80a.jpg"
       },
       {
-        "id": 4,
+        "id": 24,
         "nombre": "ARCHIVADOR UNICO OFICIO NEGRO (20)",
         "descripcion": "Carpeta de 3 anillos para organizar documentos de manera ordenada.",
         "precio": 4.99,
         "imagen": "https://ecuapapel.com.ec/wp-content/uploads/2021/06/04370.jpg"
       },
       {
-        "id": 5,
+        "id": 25,
         "nombre": "Bolígrafo Uniball® Clip gel",
         "descripcion": "Bolígrafo plástico Uniball con cuerpo translucido de color, punta de 0,7 mm, de mecanismo retráctil. Tinta de color del bolígrafo. Escritura extremadamente suave. Incluye logo impreso.",
         "precio": 3.49,
         "imagen": "https://www.promostore.ec/wp-content/uploads/2024/06/BLPL0046-boligrafo-uniball-clip-gel-medidas-1-800x800.webp"
       },
       {
-        "id": 6,
+        "id": 26,
         "nombre": "Papel Bond 60gr 65x90 Doblado",
         "descripcion": "Papel bond de 80g en resma de 500 hojas, ideal para impresoras.",
         "precio": 6.99,
         "imagen": "https://dilipa.com.ec/7-large_default/papel-bond-65x90-60gr-doblado.jpg"
       },
       {
-        "id": 7,
+        "id": 27,
         "nombre": "REGLA PLASTICA 30 CM APOLO REF. 0.38 7862138010169",
         "descripcion": "Los curvigrafos son herramientas importantes para realizar curvas que el compas no puede realizar, particularmente en dibujo técnico. Los curvigrafos son utilizados por estudiantes de ingeniería, arquitectura y topografía y sus resultados deben ser extremadamente precisos y limpios, a la vez que garantizan un diseño correcto y adecuado.",
         "precio": 1.49,
         "imagen": "https://www.tiatula.com.ec/tienda/wp-content/uploads/2020/05/7861103520191.jpg"
       },
       {
-        "id": 8,
+        "id": 28,
         "nombre": "Marcador Sharpie Fino 22 Colores",
         "descripcion": "Marcadores Sharpie Fine de colores brillantes y llamativos que marcan sobre la mayoría de superficies. Secan rápido y son resistentes al agua.",
         "precio": 8.99,
         "imagen": "https://polipapel.vteximg.com.br/arquivos/ids/175019-1000-1000/Y14433.png?v=638209883460000000"
       },
       {
-        "id": 9,
+        "id": 29,
         "nombre": "Pack X 5 Gomas De Borrar Giotto Mini Fluo",
         "descripcion": "Goma de borrar de calidad, ideal para papel y cuadernos.",
         "precio": 0.99,
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_704124-MLU74485459147_022024-O.webp"
       },
       {
-        "id": 10,
+        "id": 30,
         "nombre": "Tijera escolar colores surtidos Lancer 5 x unidad",
         "descripcion": "Tijeras con punta redondeada y mango ergonómico para niños.",
         "precio": 3.99,
@@ -218,214 +218,214 @@
     ],
     "bellezajoyeria": [
       {
-        "id": 1,
+        "id": 31,
         "nombre": "Anillos de hombre, anillos de plata para hombre, anillos",
         "descripcion": "Anillo de hombre, plata 925, Num 12",
         "precio": 49.99,
         "imagen": "https://www.kuyuna.com/wp-content/uploads/2021/07/anplho0004.jpg"
       },
       {
-        "id": 2,
+        "id": 32,
         "nombre": "Perfume Floral Boom para mujer, fragancia para mujer, Eau de Parfum en aerosol natural, aromas florales cálidos clásicos de pétalos de rosa, fresia, orquídeas Cattleya y Eau De Toilette 100 ml 3.4 fl oz",
         "descripcion": "La colonia para mujer Floral Bloom es una eau de toilette diaria de la familia de aromas florales frescos a un tercio del costo de los minoristas de alta gama.",
         "precio": 34.99,
         "imagen": "https://m.media-amazon.com/images/I/71NuIisEFLL._SL1500_.jpg"
       },
       {
-        "id": 3,
+        "id": 33,
         "nombre": "CERAVE CREMA HIDRATANTE 454 GR",
         "descripcion": "Ofrece una respuesta idónea para aquellas pieles sensibles y secas que buscan una hidratación profunda y duradera. Referente en las pieles más delicadas.",
         "precio": 25.59,
         "imagen": "https://dermasoft.com.ec/wp-content/uploads/sites/2/2022/09/dermasoft-cremahidratante-454.jpg"
       },
       {
-        "id": 4,
+        "id": 34,
         "nombre": "Mascarilla Facial De Tela Reductora De Poros Skin First",
         "descripcion": "¿Poros visibles? No para ti. La Mascarilla Facial De Tela Reductora De Poros Skin First le dará a tu rostro una apariencia iluminada. 25 ml. NSOC99143-20CO",
         "precio": 8.49,
         "imagen": "https://belcorpecuador.vtexassets.com/arquivos/ids/260325-800-800?v=638242380567230000&width=800&height=800&aspect=true"
       },
       {
-        "id": 5,
+        "id": 35,
         "nombre": "Paleta de sombra de ojos de 35 colores cálidos NESA",
         "descripcion": "Multicolor para maquillaje: 35 colores diferentes paleta de sombras de ojos en polvo altamente pigmentados. Creado con ingredientes de la más alta calidad y la más actualizada ionizada, lujosamente pigmentada sombra de ojos, pigmentos y aceite mineral más pura.",
         "precio": 19.99,
         "imagen": "https://www.magu.ec/wp-content/uploads/2020/08/MAGU_Paleta-de-sombra-de-ojos-de-35-colores-calidos-NESA_01.png"
       },
       {
-        "id": 6,
+        "id": 36,
         "nombre": "Reloj de pulsera cronografo esfera blanca marca Spalding & Bros",
         "descripcion": "Con esfera blanca, aquí tienes este reloj cronografo de la marca americana Spalding&Bros. Un reloj elegante donde lo clásico y actual funcionan perfectamente.",
         "precio": 89.99,
         "imagen": "https://solohombre.es/media/catalog/product/r/e/reloj-de-pulsera-hombre-cronografo-esfera-blanca-marca-spalding-bros1.gif"
       },
       {
-        "id": 7,
+        "id": 37,
         "nombre": "Colonia Masculina Thesu Racco, 100ml (153)",
         "descripcion": "Una fusión de lujo, poder y elegancia. Aroma Amaderado Oriental Spicy. Contiene esencias calientes y sensuales. Notas de salida de Pimienta, Jengibre y Nuez Moscada. Notas de cuerpo de Rosa, Canela y Condimentos. Notas de fondo de Cedro, Ámbar y Musk.",
         "precio": 24.99,
-        "imagen": "https://bo.shop.racco.global/uploads/products/69ea5fa488b2048a8edc86e5f3b89d2c.png"
+        "imagen": "https://lbelecuador.vtexassets.com/arquivos/ids/309052/200106854_fragancias_masculinas_Bleu_Intense_Night_galeria1.jpg?v=638545968337030000"
       },
       {
-        "id": 8,
+        "id": 38,
         "nombre": "Esmalte de Uñas Base Endurecedora MOLLIE",
         "descripcion": "12 ml. La belleza y el cuidado de las uñas es primordial para lucir unas manos hermosas, dale la bienvenida a uñas naturales más largas y fuertes con nuestras base endurecedora.",
         "precio": 5.99,
         "imagen": "https://www.gloriasaltos.com/wp-content/uploads/2024/07/16966A.jpg"
       },
       {
-        "id": 9,
+        "id": 39,
         "nombre": "Colgante de Mujer Yoshie",
         "descripcion": "Collar de oro de 18k con un diseño delicado y elegante.",
         "precio": 275.99,
         "imagen": "https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/yoshie-p/diamond/lab-grown-diamond_AAA/alloycolour/yellow.jpg"
       },
       {
-        "id": 10,
+        "id": 40,
         "nombre": "Cepillo de Cabello Ovalado Acolchonado con Mango Ergonómico Neon Brush Timco CAV02",
         "descripcion": "Brinda un aspecto liso, brillante y saludable. Cepillo acolchado redondo, con cerdas incrustadas en un colchón, diseñadas en hileras amplias para brindar un confortante masaje en el cuero cabelludo. Apropiado para todo tipo de cabello y apto para su uso tanto mojado como seco.",
         "precio": 7.99,
         "imagen": "https://www.timco.com.mx/cdn/shop/files/CAVO2_43eb00f3-d0e8-491d-916d-a583edbb590a_1024x1024.jpg?v=1739834788"
       }
     ],
-    "instrumentosmusicales": [
+    "instrumentos": [
       {
-        "id": 1,
+        "id":41,
         "nombre": "Kit Fender Strat SS Pack | Combo de Guitarra Eléctrica",
         "descripcion": "El set de guitarra eléctrica Squier Strat SS Pack Brown Sunburst es perfecto para los más pequeños que quieren comenzar su andadura con la guitarra eléctrica.",
         "precio": 199.99,
         "imagen": "https://ditronics.ec/wp-content/uploads/2019/10/Squier-Stratocaster-Bsb-Gb-Kit-de-guitarra-Ditronics-Ecuador-4.jpg"
       },
       {
-        "id": 2,
+        "id":42,
         "nombre": "Bajo Eléctrico TRBX305 Yamaha",
         "descripcion": "La nueva serie de bajos trbx300 combina el mejor tono de la caoba con una versatilidad inédita hasta la fecha. Incorpora innovaciones a nivel de eq desarrolladas en colaboración con los mejores artistas de la marca, como el selector “performance eq” de 5 posiciones. ",
         "precio": 249.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/BAJO-ELECTRICO-TRBX305-YAMAHA-1-600x600.jpg"
       },
       {
-        "id": 3,
+        "id":43,
         "nombre": "Piano Digital de 88 teclas P-125B Yamaha",
         "descripcion": "El Yamaha P-125 es un piano digital compacto que combina una interpretación pianística excelente con un nuevo diseño sencillo y minimalista. ",
         "precio": 599.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/PIANO-YAMAHA-P-125-1-600x600.jpg"
       },
       {
-        "id": 4,
+        "id":44,
         "nombre": "BATERIA ELECTRICA CARLSBRO CSD25M 7 PIEZAS",
         "descripcion": "La batería electrónica CSD25M está diseñada con 3 platillos de 10 con un avanzado acolchado de goma de tacto suave que reduce el ruido. Tanto los platillos Crash como los Ride incluyen una función de ahogo de platillos.",
         "precio": 499.99,
         "imagen": "https://sonikaecuador.com/31421-large_default/bateria-electrica-carlsbro-csd25m-7-piezas.jpg"
       },
       {
-        "id": 5,
+        "id":45,
         "nombre": "SAXOFON ALTO YAMAHA YAS280 ",
         "descripcion": "Los saxofones 280 ofrecen a los principiantes un instrumento fiable para empezar a tocar. Ofrecen un sonido de saxofón característicamente brillante con una excelente entonación y algunas características sorprendentemente de alta calidad para un instrumento de nivel de entrada.",
         "precio": 799.99,
         "imagen": "https://sonikaecuador.com/35207-large_default/saxofon-alto-yamaha-yas280-estuche.jpg"
       },
       {
-        "id": 6,
+        "id":46,
         "nombre": "Conjunto de violín acústico",
         "descripcion": "Paquete para principiantes de violín acústico para estudiantes hecho a mano con estuche para llevar, arcos y rosinas (negro).",
         "precio": 179.99,
         "imagen": "https://images-cdn.ubuy.qa/639f40f5c6243e61414fc182-ochine-acoustic-violin-set-full-size-44.jpg"
       },
       {
-        "id": 7,
+        "id":47,
         "nombre": "Ukelele Soprano de 21p FZU-002 FZone",
         "descripcion": "Ukelele soprano. Tamaño: 21″ pulgadas. Colores disponibles: cafe, azul, rojo, amarillo, verde, negro",
         "precio": 39.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/UKELELE-SOPRANO-FZONE-FZU-002-1.jpg"
       },
       {
-        "id": 8,
+        "id":48,
         "nombre": "Jean Paul TR-430 Trompeta Bb Intermedia - Rose Brass Leadpipe",
         "descripcion": "La trompeta Jean Paul TR-430 ofrece a sus usuarios una actualización sustancial en la experiencia de juego.",
         "precio": 349.99,
         "imagen": "https://images-cdn.ubuy.co.in/634d14335cb1f91bfb68ddbd-jean-paul-usa-trumpet-standard-brass.jpg"
       },
       {
-        "id": 9,
+        "id":49,
         "nombre": "Flauta Traversa Freedom KFL-100S",
         "descripcion": "Flauta Traversa, tecla C, 17 hoyos abiertos, Cuerpo profesional de cuproníquel, compensación G, resortes de acero inoxidable, tornillos ajustables. Incluye Caja de ABS, accesorios y estuche. Color Plateado / plata de níquel.",
         "precio": 149.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/FLAUTA-TRVERSA-KFL100S-4-600x600.jpg"
       },
       {
-        "id": 10,
+        "id": 50,
         "nombre": "Teclado musical Casio CT-X CT-X800 61 teclas negro 9.5V",
         "descripcion": "Teclado musical con 61 teclas y 100 sonidos preprogramados. Casio es una empresa con larga trayectoria en el mercado que se destaca por ofrecer productos originales e innovadores.",
         "precio": 129.99,
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_930725-MLA72801481416_112023-O.webp"
       }
     ],
-    "accesoriosmascotas": [
+    "mascotas": [
       {
-        "id": 1,
+        "id": 51,
         "nombre": "Collar para perro Sport Dog C Collar Yelow",
         "descripcion": "Collar acolchado SPORT DOG C COLLAR YELLOW para perros. Costuras reflectantes y etiqueta para el nombre. Varios tamaños y colores.",
         "precio": 10.99,
         "imagen": "https://citypet.ec/wp-content/uploads/2020/05/SPORT-DOG-C-COLLAR-YELLOW-2.jpg"
       },
       {
-        "id": 2,
+        "id": 52,
         "nombre": "PawHut Jaula para Conejos de Madera Conejera para Mascotas Pequeñas",
         "descripcion": "¿Has visto esta bonita jaula para conejos de interior de PawHut? Es ideal para conejitos, cobayas y otros animales de dimensiones parecidas. Hecha de madera de abeto resistente y alambre de metal, tiene 2 pisos unidos por una rampa y cuenta con 1 puerta lateral para facilitar el acceso y manejo, y la tapa superior que se abre por completo.",
         "precio": 79.99,
         "imagen": "https://media-fd.conforama.es/media/max1200/91884a48fd75c3605bc5ee0251807ef6636a3711_2038de5b88884be0ac5edc7dde2d3b19.jpg"
       },
       {
-        "id": 3,
+        "id": 53,
         "nombre": "CAMA ANTIANSIEDAD/RELAJANTE EN FORMA DE PATA DE OSO PARA GATOS",
         "descripcion": "Cama antiansiedad y relajante en forma de huella para está elaborada en felpa de alta calidad y duradera. Su interior está relleno de algodón PP súper suave y respetuoso con el medio ambiente. De fácil lavado, se puede meter a la lavadora y secarla a baja temperatura después del lavado. Su forma redonda proporciona una sensación completa de seguridad para tu mascota. Disponible en tres tallas: de 70cm (perritos de 22 libras o 10kg) 90cm de diámetro (hasta 45 libras o 20kg) 110cm de diámetro (hasta 75 libras o 34kg). Tres colores disponibles.",
         "precio": 39.99,
         "imagen": "https://kizetastore.com/cdn/shop/files/12_d1caa9de-362a-452b-b605-2f74726ef587.png?v=1726064829"
       },
       {
-        "id": 4,
+        "id": 54,
         "nombre": "Juguete de nudo de algodón para mascotas - Tamaño 4, 5, 10, 11 Adepaton WL-00842",
         "descripcion": "los juguetes para masticar perros son una excelente manera de mantener los dientes de su perro limpios y fuertes. La cuerda para masticar promueve la masticación y el juego, mejora la salud dental del perro cepillando los dientes, masajeando las encías, reduciendo la acumulación de placa y previniendo la enfermedad de las encías.",
         "precio": 6.99,
         "imagen": "https://i5.walmartimages.com/asr/de601155-0c9a-46af-a991-aac7bdd5d3ce.64787bb781c3a29e440dad5b2c78e58c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
       },
       {
-        "id": 5,
+        "id": 55,
         "nombre": "Correa retráctil para perros de 5 m con estuche plástico antideslizante.",
         "descripcion": "Correa retráctil para perros de 5 m con estuche plástico antideslizante. Perfecta para salidas de paseo y mantener controlada la distancia de la mascota. Incluye gancho metálico de liberación rápida. Medidas del producto (Alt+Anch+Prof): 14 x 3,2 x 17 cm DOGS COLLECTION",
         "precio": 14.99,
         "imagen": "https://www.superpet.club/25100-large_default/flexi-xtreme-correa-extensible-con-amortiguador-y-cinta-de-5-m.jpg"
       },
       {
-        "id": 6,
+        "id": 56,
         "nombre": "Arenero para gato con tapa / filtro de carbón Savic",
         "descripcion": "Lo mejor para nuestras mascotas y nuestro planeta, este arenero está elaborado con residuos plásticos, por lo que brinda comodidad, facilidad de uso y con un corazón para el medio ambiente. Este arenero doméstico para gatos tiene un diseño moderno, fácil y rápido de limpiar gracias al frente abatible.",
         "precio": 22.99,
         "imagen": "https://mascotas365.com/wp-content/uploads/2023/12/Articulo-222-e1703631620404.jpg"
       },
       {
-        "id": 7,
+        "id": 57,
         "nombre": "Plato para perro con diseño interno que calma el estrés.",
         "descripcion": "Plato para perro con diseño interno que calma el estrés. Previene malestares estomacales, vómitos y obesidad. Ideal para todo tipo de alimento. Medidas del producto (Alt+Anch+Prof): 5 x 22 x 22 cm VIDA DE PERRO",
         "precio": 8.99,
         "imagen": "https://kywiec.vtexassets.com/arquivos/ids/195996/102624-1.jpg?v=638476052068530000"
       },
       {
-        "id": 8,
+        "id": 58,
         "nombre": "Rascador gimnasio para gatos OEM con rascador color marrón",
         "descripcion": "Rascador vertical con plataforma para gatos activos.",
         "precio": 34.99,
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_869848-MLA74806225557_022024-O.webp"
       },
       {
-        "id": 9,
+        "id": 59,
         "nombre": "Snack Para Perros De Carne Xl CARNITAS 250 G",
         "descripcion": "Delicioso stick de carne que proporciona proteína de alta digestibilidad. Alto contenído de proteína, cada stick contiene un mínimo de 30% de proteína",
         "precio": 12.99,
         "imagen": "https://www.supermaxi.com/wp-content/uploads/2024/08/items2Figm2F1000x10002F7862108371825-1.jpg"
       },
       {
-        "id": 10,
+        "id": 60,
         "nombre": "Transportador de gatos VEVOR con ruedas rodante transportador de mascotas con mango 18 libras gris-",
         "descripcion": "Transportadora de viaje para mascotas pequeñas, con ventilación.",
         "precio": 29.99,

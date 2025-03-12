@@ -122,3 +122,20 @@
         display: flex;
     }
 }
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.auth-buttons .menu-item {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.auth-buttons .menu-item:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

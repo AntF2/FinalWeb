@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,43 +11,40 @@ export class ProducosService {
 
   constructor(private http: HttpClient) {}
 
-  getBellezaJoyeria(): Observable<any[]> {
-    return this.http.get<{ bellezajoyeria: any[] }>(this.API_URL).pipe(
-      map(data => data.bellezajoyeria || [])
+  // Método general para obtener productos según la categoría
+  getProductosPorCategoria(categoria: string): Observable<any[]> {
+    // Normalizar el nombre de la categoría, eliminando los guiones
+    const categoriaNormalizada = categoria.replace(/-/g, '');
+  
+    return this.http.get<{ [key: string]: any[] }>(this.API_URL).pipe(
+      map(data => {
+        if (!data[categoriaNormalizada]) {
+          throw new Error(`Categoría no encontrada: ${categoria}`);
+        }
+        return data[categoriaNormalizada] || [];
+      }),
+      catchError(error => {
+        console.error('Error obteniendo productos:', error);
+        return throwError(() => new Error('Error obteniendo productos'));
+      })
     );
   }
+  
 
-  getTecnologia(): Observable<any[]> {
-    return this.http.get<{ tecnologia: any[] }>(this.API_URL).pipe(
-      map(data => data.tecnologia || [])
-    );
-  }
-
-  getElectrodomesticos(): Observable<any[]> {
-    return this.http.get<{ electrodomesticos: any[] }>(this.API_URL).pipe(
-      map(data => data.electrodomesticos || [])
-    );
-  }
-
-  getUtilesEscolares(): Observable<any[]> {
-    return this.http.get<{ utilesescolares: any[] }>(this.API_URL).pipe(
-      map(data => data.utilesescolares || [])
-    );
-  }
-
-  getInstrumentosMusicales(): Observable<any[]> {
-    return this.http.get<{ instrumentosmusicales: any[] }>(this.API_URL).pipe(
-      map(data => data.instrumentosmusicales || [])
-    );
-  }
-
-  getAccesoriosMascotas(): Observable<any[]> {
-    return this.http.get<{ accesoriosmascotas: any[] }>(this.API_URL).pipe(
-      map(data => data.accesoriosmascotas || [])
-    );
-  }
-
+  // Método para obtener un producto específico por categoría y ID
   getProductoPorCategoriaYId(categoria: string, id: number): Observable<any> {
-    return this.http.get(`${this.API_URL}/${categoria}/${id}`);
+    return this.getProductosPorCategoria(categoria).pipe(
+      map(productos => {
+        const producto = productos.find(p => p.id === id);
+        if (!producto) {
+          throw new Error(`Producto con ID ${id} no encontrado en categoría ${categoria}`);
+        }
+        return producto;
+      }),
+      catchError(error => {
+        console.error('Error obteniendo producto:', error);
+        return throwError(() => new Error('Error obteniendo producto'));
+      })
+    );
   }
 }

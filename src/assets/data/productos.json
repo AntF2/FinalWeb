@@ -434,14 +434,16 @@
     ]
   },
   "users": [
-    {},
+    {
+      "id": "7482"
+    },
     {
       "email": "E@gmail.com",
       "password": "$2a$10$W6SQz2xIxPJiOB4OmAK9c.VQ5A38b279oxdH.MNU22nnq4110TPOO",
       "name": "evelyn",
       "confirm-password": "1234",
       "role": "User",
-      "id": 109,
+      "id": "109",
       "confirmPassword": "1111"
     },
     {
@@ -450,7 +452,7 @@
       "name": "Anthony",
       "confirm-password": "1234",
       "role": "Usuario",
-      "id": 110,
+      "id": "110",
       "confirmPassword": "1234"
     },
     {
@@ -459,7 +461,7 @@
       "name": "Yulissa",
       "confirm-password": "1234",
       "role": "Usuario",
-      "id": 111
+      "id": "111"
     },
     {
       "email": "o@gmail.com",
@@ -467,7 +469,15 @@
       "name": "Odalys",
       "confirm-password": "1234",
       "role": "Admin",
-      "id": 112
+      "id": "112"
+    },
+    {
+      "email": "danielllumiquinga20102004@gmail.com",
+      "password": "$2a$10$bB3p5lYq5baVERO5zox8b.8V234r108nP.AykgsF6ARtSFxSBQUTe",
+      "name": "ever",
+      "confirm-password": "1234",
+      "role": "Usuario",
+      "id": "tVn4H1K"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProducosService } from '../../service/producos.service';
+import { ProductosService } from '../../service/productos.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product.model';
@@ -21,7 +21,7 @@ export class CrudProductosComponent implements OnInit {
   categorias: string[] = ['tecnologia', 'electrodomesticos', 'mascotas', 'instrumentos', 'utilesescolares','bellezajoyeria']; // Lista de categorías disponibles
   selectedCategoria: string = 'tecnologia'; // Categoría seleccionada por defecto
 
-  constructor(private producService: ProducosService) {}
+  constructor(private producService: ProductosService) {}
 
   ngOnInit(): void {
     this.getProductos(); // Cargar productos de la categoría por defecto

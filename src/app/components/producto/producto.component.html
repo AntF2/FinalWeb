@@ -1,7 +1,4 @@
-<br>
-<br>
-<br>
-<br>
+<br><br><br><br>
 <div class="producto-container p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
   <ng-container *ngIf="producto$ | async as producto; else loading">
     <ng-container *ngIf="producto; else notFound">
@@ -9,6 +6,18 @@
       <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen w-full h-64 object-cover rounded-md mt-4">
       <p class="mt-4 text-lg text-gray-700"><strong>Descripción:</strong> {{ producto.descripcion }}</p>
       <p class="mt-2 text-xl text-green-600 font-semibold"><strong>Precio:</strong> ${{ producto.precio }}</p>
+      
+      <!-- Contador para la cantidad de productos -->
+      <div class="flex items-center justify-center mt-4">
+        <label for="cantidad" class="mr-2 text-lg">Cantidad:</label>
+        <input type="number" id="cantidad" [(ngModel)]="cantidad" min="1" class="w-16 text-center border border-gray-300 rounded-md">
+      </div>
+      
+      <!-- Botón para agregar al carrito -->
+      <button (click)="agregarAlCarrito(producto)" class="mt-6 px-6 py-2 bg-blue-600 text-white text-lg rounded-md shadow-lg hover:bg-blue-500 transition">
+        AGREGAR
+      </button>
+      
       <a routerLink="/productos/tabla/{{ categoria }}" class="volver-btn inline-block mt-6 px-6 py-2 bg-blue-600 text-white text-lg rounded-md shadow-lg hover:bg-blue-500 transition">Volver a la lista</a>
     </ng-container>
   </ng-container>
@@ -20,7 +29,6 @@
       </svg>
       <span>Cargando producto...</span>
     </div>
-    
   </ng-template>
 
   <ng-template #notFound>

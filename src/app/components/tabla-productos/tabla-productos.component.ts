@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { ProducosService } from '../../service/producos.service';
+
 import { CommonModule } from '@angular/common';
+import { ProductosService } from '../../service/productos.service';
 
 @Component({
   selector: 'app-tabla',
@@ -16,7 +17,7 @@ export class TablaProductosComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute, // Inyectamos ActivatedRoute
-    private producosService: ProducosService
+    private productosService: ProductosService
   ) { }
 
   ngOnInit() {
@@ -29,7 +30,7 @@ export class TablaProductosComponent implements OnInit {
 
   cargarProductos() {
     // Usamos el método genérico para obtener los productos por categoría
-    this.producosService.getProductosPorCategoria(this.categoria).subscribe(
+    this.productosService.getProductosPorCategoria(this.categoria).subscribe(
       productos => {
         this.productos = productos; // Asignamos los productos a la propiedad 'productos'
       },

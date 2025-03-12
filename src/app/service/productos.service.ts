@@ -6,21 +6,23 @@ import { catchError, map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root',
 })
-export class ProducosService {
-  private API_URL = 'http://localhost:3000/productos';
+export class ProductosService {
+  private API_URL = 'http://localhost:3000/productos'; // API base URL
 
   constructor(private http: HttpClient) {}
 
-  // Método general para obtener productos según la categoría
+  /**
+   * Método general para obtener productos según la categoría
+   * @param categoria - Nombre de la categoría
+   */
   getProductosPorCategoria(categoria: string): Observable<any[]> {
-    const categoriaNormalizada = categoria.replace(/-/g, '');
-
     return this.http.get<{ [key: string]: any[] }>(this.API_URL).pipe(
       map((data) => {
-        if (!data[categoriaNormalizada]) {
+        // Verifica si la categoría existe en los datos recibidos
+        if (!data[categoria]) {
           throw new Error(`Categoría no encontrada: ${categoria}`);
         }
-        return data[categoriaNormalizada] || [];
+        return data[categoria] || [];
       }),
       catchError((error) => {
         console.error('Error obteniendo productos:', error);
@@ -29,7 +31,11 @@ export class ProducosService {
     );
   }
 
-  // Método para obtener un producto específico por categoría y ID
+  /**
+   * Método para obtener un producto específico por categoría y ID
+   * @param categoria - Nombre de la categoría
+   * @param id - ID del producto
+   */
   getProductoPorCategoriaYId(categoria: string, id: number): Observable<any> {
     return this.getProductosPorCategoria(categoria).pipe(
       map((productos) => {
@@ -46,7 +52,10 @@ export class ProducosService {
     );
   }
 
-  // Método para agregar un nuevo producto
+  /**
+   * Método para agregar un nuevo producto
+   * @param producto - Datos del producto a agregar
+   */
   addProducto(producto: any): Observable<any> {
     return this.http.post<any>(this.API_URL, producto).pipe(
       catchError((error) => {
@@ -56,7 +65,11 @@ export class ProducosService {
     );
   }
 
-  // Método para editar un producto existente
+  /**
+   * Método para actualizar un producto existente
+   * @param id - ID del producto a actualizar
+   * @param producto - Datos actualizados del producto
+   */
   updateProducto(id: number, producto: any): Observable<any> {
     return this.http.put<any>(`${this.API_URL}/${id}`, producto).pipe(
       catchError((error) => {
@@ -66,7 +79,10 @@ export class ProducosService {
     );
   }
 
-  // Método para eliminar un producto
+  /**
+   * Método para eliminar un producto
+   * @param id - ID del producto a eliminar
+   */
   deleteProducto(id: number): Observable<void> {
     return this.http.delete<void>(`${this.API_URL}/${id}`).pipe(
       catchError((error) => {

@@ -1,14 +1,18 @@
+// producto.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { ProducosService } from '../../service/producos.service';
+
 import { CommonModule } from '@angular/common';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { CarritoComprasService } from '../../service/carrito-compras.service';  // Nuevo servicio
+import { FormsModule } from '@angular/forms';
+import { ProductosService } from '../../service/productos.service';
 
 @Component({
   selector: 'app-producto',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, FormsModule],
   templateUrl: './producto.component.html',
   styleUrls: ['./producto.component.css']
 })
@@ -17,10 +21,12 @@ export class ProductoComponent implements OnInit {
   id: number = 0;
   producto$: Observable<any> | null = null;
   error: boolean = false;
+  cantidad: number = 1; // Nueva propiedad para la cantidad seleccionada
 
   constructor(
     private route: ActivatedRoute,
-    private productosService: ProducosService
+    private productosService: ProductosService,
+    private carritoService: CarritoComprasService // Inyección del servicio
   ) {}
 
   ngOnInit() {
@@ -40,5 +46,10 @@ export class ProductoComponent implements OnInit {
       })
     );
   }
-  
+
+  // Método para agregar al carrito
+  agregarAlCarrito(producto: any) {
+    this.carritoService.agregarProducto(producto, this.cantidad); // Agregar producto con cantidad
+    alert('Producto agregado al carrito con éxito');
+  }
 }

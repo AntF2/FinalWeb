@@ -1,0 +1,30 @@
+<!-- carrito-compras.component.html -->
+<div class="carrito-container p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-800">Carrito de Compras</h2>
+
+    <table class="min-w-full mt-4">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 text-left">Producto</th>
+                <th class="px-4 py-2 text-left">Cantidad</th>
+                <th class="px-4 py-2 text-left">Precio</th>
+                <th class="px-4 py-2 text-left">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos">
+                <td class="px-4 py-2">{{ producto.nombre }}</td>
+                <td class="px-4 py-2">{{ producto.cantidad }}</td>
+                <td class="px-4 py-2">${{ producto.precio }}</td>
+                <td class="px-4 py-2">${{ producto.precio * producto.cantidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Totales -->
+    <div class="totales mt-6">
+        <p><strong>Subtotal:</strong> ${{ totales.subtotal }}</p>
+        <p><strong>IVA (16%):</strong> ${{ totales.iva }}</p>
+        <p><strong>Total:</strong> ${{ totales.total }}</p>
+    </div>
+</div>

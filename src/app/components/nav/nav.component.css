@@ -139,3 +139,13 @@
 .auth-buttons .menu-item:hover {
     background-color: #0056b3; /* Color de fondo al pasar el mouse */
 }
+.compras {
+    width: 45px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    position: fixed;
+    top: 18px;
+    right: 480px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+

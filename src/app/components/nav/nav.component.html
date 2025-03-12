@@ -22,5 +22,12 @@
             <a href="/contactos" class="menu-item">Contactos</a>
             <a href="/formulario" class="menu-item">Formulario</a>
         </div>
+              <!-- Botón de Login/Cerrar Sesión -->
+      <ng-container *ngIf="isLoggedIn(); else loggedOut">
+        <a href="login" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-gray-200 transition" (click)="logout()">Cerrar Sesión</a>
+      </ng-container>
+      <ng-template #loggedOut>
+        <a href="login" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-gray-200 transition">Login</a>
+      </ng-template>
     </div>
-</nav>
+  </nav>

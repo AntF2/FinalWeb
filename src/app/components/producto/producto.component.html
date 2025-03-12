@@ -1,21 +1,29 @@
-<div class="producto-container">
-    <ng-container *ngIf="producto$ | async as producto; else loading">
-      <ng-container *ngIf="producto; else notFound">
-        <h2>{{ producto.nombre }}</h2>
-        <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen">
-        <p><strong>Descripción:</strong> {{ producto.descripcion }}</p>
-        <p><strong>Precio:</strong> ${{ producto.precio }}</p>
-        <a routerLink="/productos/tabla/{{ categoria }}" class="volver-btn">Volver a la lista</a>
-      </ng-container>
+<br>
+<br>
+<br>
+<br>
+<div class="producto-container p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
+  <ng-container *ngIf="producto$ | async as producto; else loading">
+    <ng-container *ngIf="producto; else notFound">
+      <h2 class="text-3xl font-bold text-center text-gray-800">{{ producto.nombre }}</h2>
+      <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen w-full h-64 object-cover rounded-md mt-4">
+      <p class="mt-4 text-lg text-gray-700"><strong>Descripción:</strong> {{ producto.descripcion }}</p>
+      <p class="mt-2 text-xl text-green-600 font-semibold"><strong>Precio:</strong> ${{ producto.precio }}</p>
+      <a routerLink="/productos/tabla/{{ categoria }}" class="volver-btn inline-block mt-6 px-6 py-2 bg-blue-600 text-white text-lg rounded-md shadow-lg hover:bg-blue-500 transition">Volver a la lista</a>
     </ng-container>
-    
-    <ng-template #loading>
-      <p>Cargando producto...</p>
-    </ng-template>
-  
-    <ng-template #notFound>
-      <p class="error-message">Producto no encontrado.</p>
-    </ng-template>
-  </div>
+  </ng-container>
 
-  
+  <ng-template #loading>
+    <div role="status" class="flex justify-center items-center space-x-2 text-gray-600">
+      <svg class="animate-spin w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z"/>
+      </svg>
+      <span>Cargando producto...</span>
+    </div>
+    
+  </ng-template>
+
+  <ng-template #notFound>
+    <p class="error-message text-center text-xl text-red-600 font-semibold">Producto no encontrado.</p>
+  </ng-template>
+</div>

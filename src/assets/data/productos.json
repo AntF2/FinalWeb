@@ -34,7 +34,7 @@
         "nombre": "XVX M84 75% Teclado Mecánico Inalámbrico/Cableado, Teclado de Juego Intercambiable en Caliente, N-Key Rollover RGB Personalizado para Windows Mac PC, Gateron Yellow Switch",
         "descripcion": "El teclado mecánico inalámbrico / con cable XVX M84 ofrece conectividad de dos modos, teclado con interruptores de intercambio en caliente, personalización definitiva con teclado RGB y diseño Compact TKL con teclas de perfil XVX únicas.",
         "precio": 79.99,
-        "imagen": "https://m.media-amazon.com/images/I/71jAUlz7KPL._AC_SL1500_.jpg"
+        "imagen": "https://ae01.alicdn.com/kf/S219da496ccfb4bd889ebf1652c3c6d98i.jpg"
       },
       {
         "id": 6,
@@ -48,7 +48,7 @@
         "nombre": "Cargador Solar, Banco de Energía Solar Portátil",
         "descripcion": "Banco de Energía Solar Portátil de 38800mAh para Todos los Celulares, Paquete de Batería Impermeable, Cargador de Energía de Respaldo Externo Exterior Dual USB 5V Salidas Linternas LED, Perfecto para Viajar en Camping.",
         "precio": 14.99,
-        "imagen": "https://m.media-amazon.com/images/I/71UsNymX-vL._AC_SL1449_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/51MhKt-AtRL._AC_.jpg"
       },
       {
         "id": 8,
@@ -290,63 +290,63 @@
     ],
     "instrumentos": [
       {
-        "id":41,
+        "id": 41,
         "nombre": "Kit Fender Strat SS Pack | Combo de Guitarra Eléctrica",
         "descripcion": "El set de guitarra eléctrica Squier Strat SS Pack Brown Sunburst es perfecto para los más pequeños que quieren comenzar su andadura con la guitarra eléctrica.",
         "precio": 199.99,
         "imagen": "https://ditronics.ec/wp-content/uploads/2019/10/Squier-Stratocaster-Bsb-Gb-Kit-de-guitarra-Ditronics-Ecuador-4.jpg"
       },
       {
-        "id":42,
+        "id": 42,
         "nombre": "Bajo Eléctrico TRBX305 Yamaha",
         "descripcion": "La nueva serie de bajos trbx300 combina el mejor tono de la caoba con una versatilidad inédita hasta la fecha. Incorpora innovaciones a nivel de eq desarrolladas en colaboración con los mejores artistas de la marca, como el selector “performance eq” de 5 posiciones. ",
         "precio": 249.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/BAJO-ELECTRICO-TRBX305-YAMAHA-1-600x600.jpg"
       },
       {
-        "id":43,
+        "id": 43,
         "nombre": "Piano Digital de 88 teclas P-125B Yamaha",
         "descripcion": "El Yamaha P-125 es un piano digital compacto que combina una interpretación pianística excelente con un nuevo diseño sencillo y minimalista. ",
         "precio": 599.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/PIANO-YAMAHA-P-125-1-600x600.jpg"
       },
       {
-        "id":44,
+        "id": 44,
         "nombre": "BATERIA ELECTRICA CARLSBRO CSD25M 7 PIEZAS",
         "descripcion": "La batería electrónica CSD25M está diseñada con 3 platillos de 10 con un avanzado acolchado de goma de tacto suave que reduce el ruido. Tanto los platillos Crash como los Ride incluyen una función de ahogo de platillos.",
         "precio": 499.99,
         "imagen": "https://sonikaecuador.com/31421-large_default/bateria-electrica-carlsbro-csd25m-7-piezas.jpg"
       },
       {
-        "id":45,
+        "id": 45,
         "nombre": "SAXOFON ALTO YAMAHA YAS280 ",
         "descripcion": "Los saxofones 280 ofrecen a los principiantes un instrumento fiable para empezar a tocar. Ofrecen un sonido de saxofón característicamente brillante con una excelente entonación y algunas características sorprendentemente de alta calidad para un instrumento de nivel de entrada.",
         "precio": 799.99,
         "imagen": "https://sonikaecuador.com/35207-large_default/saxofon-alto-yamaha-yas280-estuche.jpg"
       },
       {
-        "id":46,
+        "id": 46,
         "nombre": "Conjunto de violín acústico",
         "descripcion": "Paquete para principiantes de violín acústico para estudiantes hecho a mano con estuche para llevar, arcos y rosinas (negro).",
         "precio": 179.99,
         "imagen": "https://images-cdn.ubuy.qa/639f40f5c6243e61414fc182-ochine-acoustic-violin-set-full-size-44.jpg"
       },
       {
-        "id":47,
+        "id": 47,
         "nombre": "Ukelele Soprano de 21p FZU-002 FZone",
         "descripcion": "Ukelele soprano. Tamaño: 21″ pulgadas. Colores disponibles: cafe, azul, rojo, amarillo, verde, negro",
         "precio": 39.99,
         "imagen": "https://lavictoria.ec/wp-content/uploads/2023/01/UKELELE-SOPRANO-FZONE-FZU-002-1.jpg"
       },
       {
-        "id":48,
+        "id": 48,
         "nombre": "Jean Paul TR-430 Trompeta Bb Intermedia - Rose Brass Leadpipe",
         "descripcion": "La trompeta Jean Paul TR-430 ofrece a sus usuarios una actualización sustancial en la experiencia de juego.",
         "precio": 349.99,
         "imagen": "https://images-cdn.ubuy.co.in/634d14335cb1f91bfb68ddbd-jean-paul-usa-trumpet-standard-brass.jpg"
       },
       {
-        "id":49,
+        "id": 49,
         "nombre": "Flauta Traversa Freedom KFL-100S",
         "descripcion": "Flauta Traversa, tecla C, 17 hoyos abiertos, Cuerpo profesional de cuproníquel, compensación G, resortes de acero inoxidable, tornillos ajustables. Incluye Caja de ABS, accesorios y estuche. Color Plateado / plata de níquel.",
         "precio": 149.99,
@@ -432,5 +432,42 @@
         "imagen": "https://i.ebayimg.com/thumbs/images/g/Xf8AAOSw7WdnuVHV/s-l1200.jpg"
       }
     ]
-  }
+  },
+  "users": [
+    {},
+    {
+      "email": "E@gmail.com",
+      "password": "$2a$10$W6SQz2xIxPJiOB4OmAK9c.VQ5A38b279oxdH.MNU22nnq4110TPOO",
+      "name": "evelyn",
+      "confirm-password": "1234",
+      "role": "User",
+      "id": 109,
+      "confirmPassword": "1111"
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$pGl.hLmUoKqM5fGLeck2MumY5nnPTVJ4STthgJqIGg7Zt.KXjttS2",
+      "name": "Anthony",
+      "confirm-password": "1234",
+      "role": "Usuario",
+      "id": 110,
+      "confirmPassword": "1234"
+    },
+    {
+      "email": "y@gmail.com",
+      "password": "$2a$10$zN/4F13JRFJHmIqF8vo8VO1oCaC98t5w8lX3C88CtYH2iaoaKNRxG",
+      "name": "Yulissa",
+      "confirm-password": "1234",
+      "role": "Usuario",
+      "id": 111
+    },
+    {
+      "email": "o@gmail.com",
+      "password": "$2a$10$dzI037UH01Oefqvho.L7YeHu4GAg8HdKy1yxb2RaK4C0AnLVCv1OO",
+      "name": "Odalys",
+      "confirm-password": "1234",
+      "role": "Admin",
+      "id": 112
+    }
+  ]
 }

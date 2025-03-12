@@ -1,0 +1,82 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container mx-auto p-6">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Gestión de Usuarios</h2>
+  
+    <!-- Formulario de Edición de Usuario -->
+    <div *ngIf="userToEdit" class="form-container bg-white p-6 rounded-lg shadow-md mb-8 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-4">Editar Usuario</h3>
+      <form (ngSubmit)="saveUser()">
+        <!-- Campo para Nombre -->
+        <div class="form-group mb-4">
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+          <input type="text" id="nombre" [(ngModel)]="userToEdit.name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+  
+        <!-- Campo para Email -->
+        <div class="form-group mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" [(ngModel)]="userToEdit.email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+  
+        <!-- Campo para Contraseña -->
+        <div class="form-group mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+          <input type="password" id="password" [(ngModel)]="userToEdit.password" name="password" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+  
+        <!-- Campo para Confirmar Contraseña -->
+        <div class="form-group mb-4">
+          <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirmar Contraseña</label>
+          <input type="password" id="confirmPassword" [(ngModel)]="userToEdit.confirmPassword" name="confirmPassword" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+  
+        <!-- Campo para Rol -->
+        <div class="form-group mb-4">
+          <label for="role" class="block text-sm font-medium text-gray-700">Rol</label>
+          <select id="role" [(ngModel)]="userToEdit.role" name="role" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <option value="Admin">Admin</option>
+            <option value="Usuario">Usuario</option>
+          </select>
+        </div>
+  
+        <!-- Botones para guardar o cancelar -->
+        <div class="flex justify-between">
+          <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">Guardar Cambios</button>
+          <button type="button" (click)="userToEdit = null" class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-200">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  
+    <!-- Tabla de usuarios -->
+    <div *ngIf="usuarios.length > 0" class="overflow-x-auto bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+      <div class="flex justify-center">
+        <table class="min-w-full table-auto">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="py-3 px-6 text-left">Nombre</th>
+              <th class="py-3 px-6 text-left">Email</th>
+              <th class="py-3 px-6 text-left">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of usuarios" class="hover:bg-gray-100 transition-colors">
+              <td class="py-3 px-6 text-left text-gray-800">{{ user.name }}</td>
+              <td class="py-3 px-6 text-left text-gray-600">{{ user.email }}</td>
+              <td class="py-3 px-6 text-center">
+                <button (click)="editUser(user)" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">Editar</button>
+                <button (click)="deleteUser(user.id)" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition duration-200 ml-2">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <!-- Mensaje si no hay usuarios -->
+    <p *ngIf="usuarios.length === 0" class="text-center text-gray-600">No hay usuarios registrados.</p>
+  </div>
+  

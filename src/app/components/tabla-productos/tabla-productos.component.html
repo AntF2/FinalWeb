@@ -1,23 +1,30 @@
-<div class="container">
-  <h2 class="title">{{ categoria | titlecase }} - Productos</h2>
-  <table class="table">
-    <thead>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container mx-auto p-6">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">{{ categoria | titlecase }} - Productos</h2>
+  <table class="min-w-full table-auto bg-white border-collapse shadow-lg rounded-lg overflow-hidden">
+    <thead class="bg-blue-600 text-white">
       <tr>
-        <th>Imagen</th>
-        <th>Nombre</th>
-        <th>Descripción</th>
-        <th>Precio</th>
-        <th>Acción</th>
+        <th class="py-3 px-6 text-left">Imagen</th>
+        <th class="py-3 px-6 text-left">Nombre</th>
+        <th class="py-3 px-6 text-left">Descripción</th>
+        <th class="py-3 px-6 text-left">Precio</th>
+        <th class="py-3 px-6 text-left">Acción</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let producto of productos">
-        <td><img [src]="producto.imagen" alt="{{ producto.nombre }}" class="product-image"></td>
-        <td>{{ producto.nombre }}</td>
-        <td>{{ producto.descripcion }}</td>
-        <td>${{ producto.precio }}</td>
-        <td>
-          <a [routerLink]="['/productos/tabla', categoria, producto.id]" class="product-btn">Ver Información</a>
+      <tr *ngFor="let producto of productos" class="hover:bg-gray-100 transition-colors">
+        <td class="py-3 px-6 text-center">
+          <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="product-image w-24 h-24 object-cover rounded-full mx-auto">
+        </td>
+        <td class="py-3 px-6 text-left text-gray-800">{{ producto.nombre }}</td>
+        <td class="py-3 px-6 text-left text-gray-600">{{ producto.descripcion }}</td>
+        <td class="py-3 px-6 text-left text-gray-800">${{ producto.precio }}</td>
+        <td class="py-3 px-6 text-center">
+          <a [routerLink]="['/productos/tabla', categoria, producto.id]" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">información</a>
         </td>
       </tr>
     </tbody>

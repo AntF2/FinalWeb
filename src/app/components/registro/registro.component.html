@@ -1,0 +1,46 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <a class="inactive underlineHover" href="login">Inicia Sesión</a>
+      <a class="active" href="registro">Registrarse</a>
+  
+      <!-- Icono -->
+      <div class="fadeIn first">
+        <img src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png" id="icon" />
+      </div>
+  
+      <!-- Formulario de Registro -->
+      <form #registroForm="ngForm" (ngSubmit)="register(registroForm)">
+        <input type="text" id="name" class="fadeIn second" name="name" [(ngModel)]="nombre" placeholder="Nombre completo"
+          required />
+  
+        <input type="text" id="email" class="fadeIn second" name="email" [(ngModel)]="email"
+          placeholder="Correo electrónico" required />
+  
+        <input type="password" id="password" class="fadeIn second" name="password" [(ngModel)]="password"
+          placeholder="Contraseña" required />
+  
+        <input type="password" id="confirm-password" class="fadeIn second" name="confirm-password"
+          [(ngModel)]="confirmPassword" placeholder="Confirmar contraseña" required />
+  
+        <div *ngIf="password && confirmPassword && password !== confirmPassword" class="error-message">
+          Las contraseñas no coinciden.
+        </div>
+  
+        <!-- Campo de selección de rol -->
+        <select class="fadeIn second border-2 border-gray-300 focus:border-blue-500 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-md w-full" name="role" [(ngModel)]="role" required>
+            <option value="Usuario">Usuario</option>
+            <option value="Admin">Admin</option>
+          </select>
+          
+  
+        <input type="submit" class="fadeIn fourth" value="Registrarse"
+          [disabled]="!registroForm.valid || password !== confirmPassword" />
+      </form>
+    </div>
+  </div>

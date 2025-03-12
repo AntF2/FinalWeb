@@ -1,0 +1,104 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container max-w-7xl mx-auto p-4">
+  <h2 class="text-4xl font-semibold text-center text-gray-900 mb-8">Gestión de Productos</h2>
+  
+  <!-- Selector de categoría -->
+  <div class="mb-6">
+    <label for="categoria" class="block text-sm font-medium text-gray-700">Seleccionar Categoría:</label>
+    <select id="categoria" [(ngModel)]="selectedCategoria" (change)="onCategoriaChange()"
+      class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+      <option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria | capitalize }}</option>
+    </select>
+  </div>
+  
+   <!-- Formulario de edición de productos -->
+   <div *ngIf="productToEdit" class="form-container bg-white p-8 rounded-lg shadow-lg mb-8">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">{{ productToEdit.id === 0 ? 'Agregar Producto' : 'Editar Producto' }}</h3>
+    <form (ngSubmit)="saveProduct()">
+      <div class="form-group mb-4">
+        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="productToEdit.nombre" name="nombre" required
+          class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="form-group mb-4">
+        <label for="descripcion" class="block text-sm font-medium text-gray-700">Descripción</label>
+        <input type="text" id="descripcion" [(ngModel)]="productToEdit.descripcion" name="descripcion" required
+          class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="form-group mb-4">
+        <label for="precio" class="block text-sm font-medium text-gray-700">Precio</label>
+        <input type="number" id="precio" [(ngModel)]="productToEdit.precio" name="precio" required
+          class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="form-group mb-4">
+        <label for="imagen" class="block text-sm font-medium text-gray-700">Imagen</label>
+        <input type="text" id="imagen" [(ngModel)]="productToEdit.imagen" name="imagen" required
+          class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="flex justify-between">
+        <button type="submit" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+          Guardar
+        </button>
+        <button type="button" (click)="cancelEdit()"
+          class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500">
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Botón para agregar un nuevo producto -->
+  <div class="text-center mt-8">
+    <button (click)="addProduct()"
+      class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      Agregar Nuevo Producto
+    </button>
+    <br>
+    <br>
+  </div>
+
+  <!-- Tabla de productos -->
+  <div *ngIf="!isLoading" class="overflow-x-auto">
+    <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+      <thead>
+        <tr class="text-left text-sm font-semibold text-gray-700 bg-gray-100 border-b">
+          <th class="px-6 py-4">Imagen</th>
+          <th class="px-6 py-4">Nombre</th>
+          <th class="px-6 py-4">Descripción</th>
+          <th class="px-6 py-4">Precio</th>
+          <th class="px-6 py-4">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productos" class="hover:bg-gray-50 transition duration-300">
+          <td class="px-6 py-4">
+            <img [src]="producto.imagen" alt="{{ producto.nombre }}" width="50" class="rounded-md shadow-sm" />
+          </td>
+          <td class="px-6 py-4">{{ producto.nombre }}</td>
+          <td class="px-6 py-4">{{ producto.descripcion }}</td>
+          <td class="px-6 py-4">{{ producto.precio | currency }}</td>
+          <td class="px-6 py-4">
+            <button (click)="editProduct(producto)" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              Editar
+            </button>
+            <button (click)="deleteProduct(producto.id)" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 ml-2">
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Spinner de carga -->
+  <div *ngIf="isLoading" class="text-center text-gray-600">
+    <p>Cargando productos...</p>
+  </div>
+  
+ 
+</div>

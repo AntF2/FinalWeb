@@ -1,0 +1,93 @@
+/* productos.css */
+
+/* Contenedor principal */
+.container {
+    padding: 1.5rem;
+  }
+  
+  /* Título de la sección */
+  .container h2 {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700; /* bold */
+    text-align: center;
+    color: #2d3748; /* text-gray-800 */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilos de la tabla */
+  table {
+    min-width: 100%;
+    table-layout: auto;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  thead {
+    background: linear-gradient(to right, #ffb347, #ffcc80); /* Naranja pastel */
+    color: white;
+  }
+  
+  th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-weight: 600; /* font-semibold */
+    font-size: 0.875rem; /* text-sm */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking-wider */
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  tbody tr:hover {
+    background-color: #ffefd5; /* Naranja pastel suave */
+  }
+  
+  td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+  
+  .product-image {
+    width: 6rem; /* 24 */
+    height: 6rem; /* 24 */
+    object-fit: cover;
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1); /* hover:scale-110 */
+  }
+  
+  .product-description {
+    color: #718096; /* text-gray-600 */
+  }
+  
+  .product-price {
+    color: #2d3748; /* text-gray-800 */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffb347; /* Naranja pastel */
+    color: white;
+    border-radius: 0.375rem; /* rounded-lg */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #ffcc80; /* Naranja pastel más suave */
+    transform: scale(1.05); /* hover:scale-105 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  }
+  

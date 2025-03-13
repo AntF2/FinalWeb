@@ -4,6 +4,9 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 100px;
+    color: black;
+    font-size: 70px;
 }
 
 /* Estilos para las tarjetas de productos */
@@ -53,7 +56,7 @@
     font-size: 0.875rem;
     font-weight: 500;
     color: white;
-    background-color: #3b82f6;
+    background: linear-gradient(to right, #FFA500, #FF8C00); /* Fondo más oscuro */
     border-radius: 0.5rem;
     transition: background-color 0.3s;
 }

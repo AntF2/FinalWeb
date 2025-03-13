@@ -1,45 +1,178 @@
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-}
 
-.category-card img {
-    border-radius: 50%;
-}
-
-/* Carrusel */
+/* Estilos base del carousel */
 .carousel-container {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    margin-top: 800px;
 }
 
-[data-carousel-item] {
-    display: none;
-}
-
-[data-carousel-item]:first-child {
-    display: block;
-}
-
-/* Categorías */
-.category-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.category-card:hover {
-    transform: scale(1.05);
+/* Estilos del contenedor principal */
+#controls-carousel {
+    height: 400px;
+    background: #f8f9fa;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Ofertas */
-.offer img {
-    max-width: 100%;
+/* Estilos de los items del carousel */
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Estilo para mostrar la imagen activa */
+.carousel-item.active {
+    opacity: 1;
+}
+
+/* Estilos de las imágenes */
+.carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación automática */
+@keyframes carousel {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.carousel-item:nth-child(1) {
+    animation: carousel 25s infinite;
+}
+
+.carousel-item:nth-child(2) {
+    animation: carousel 25s infinite 5s;
+}
+
+.carousel-item:nth-child(3) {
+    animation: carousel 25s infinite 10s;
+}
+
+.carousel-item:nth-child(4) {
+    animation: carousel 25s infinite 15s;
+}
+
+.carousel-item:nth-child(5) {
+    animation: carousel 25s infinite 20s;
+}
+
+/* Estilos de los controles */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: content-box;
+}
+
+/* Estilos de los botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+/* Estilos de los iconos */
+.carousel-icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+/* Estilos para modo oscuro */
+@media (prefers-color-scheme: dark) {
+    #controls-carousel {
+        background: #2d3748;
+    }
+    
+    .carousel-button {
+        background: rgba(37, 99, 235, 0.3);
+    }
+    
+    .carousel-button:hover {
+        background: rgba(37, 99, 235, 0.5);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #controls-carousel {
+        height: 300px;
+        padding: 15px;
+    }
+    
+    .carousel-controls {
+        padding: 0 30px;
+    }
+    
+    .carousel-item {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #controls-carousel {
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .carousel-controls {
+        padding: 0 20px;
+    }
+    
+    .carousel-item {
+        margin: 10px;
+    }
 }

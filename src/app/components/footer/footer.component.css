@@ -1,86 +1,103 @@
-/* Aseguramos que el footer siempre quede al final */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-}
-
-.main-content {
-    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
-}
-
-/* Estilos del footer */
-.footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e0e0e0;
-    padding: 2rem 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-container {
-    max-width: 1200px;
+/* Estilos generales para el pie de página */
+footer {
+    background: linear-gradient(to right, #FFA500, #FF8C00); /* Fondo más oscuro */
+    color: white;
+    margin-top: 200px;
+  }
+  
+  footer .max-w-screen-xl {
+    max-width: 1140px; /* Limita el ancho del footer */
     margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-}
-
-.footer-logo-img {
-    height: 40px;
-    margin-right: 1rem;
-}
-
-.footer-logo-text {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-link {
-    font-size: 1rem;
-    color: #007bff;
+    padding: 0 20px;
+  }
+  
+  footer .text-white {
+    color: #fff;
+  }
+  
+  /* Logo y texto */
+  footer .flex.items-center img {
+    transition: transform 0.3s ease;
+  }
+  
+  footer .flex.items-center img:hover {
+    transform: scale(1.1); /* Efecto de zoom cuando el logo es hover */
+  }
+  
+  footer .text-2xl {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  footer .space-x-4 {
+    margin-left: 1rem;
+  }
+  
+  /* Enlaces */
+  footer a {
     text-decoration: none;
+    color: #fffdfd;
     transition: color 0.3s ease;
-}
+    font-size: 20px;
 
-.footer-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
+  }
+  
+  footer a:hover {
+    color: #FFA500; /* Color naranja para hover */
+  }
+  
+  footer ul {
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+    
+  }
+  
+  footer ul li {
+    list-style: none;
+  }
+  
+  footer .transition-colors {
+    transition: color 0.3s ease;
+  }
+  
+  /* Línea de Separación */
+  footer .border-t {
+    border-top: 1px solid #444444;
 
-.footer-bottom {
+  }
+  
+  footer .text-center {
     text-align: center;
-    margin-top: 1rem;
+  }
+  
+  footer .text-sm {
     font-size: 0.875rem;
-    color: #555;
-}
-
-.footer-text-link {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.footer-text-link:hover {
-    text-decoration: underline;
-}
+  }
+  
+  /* Estilos de la sección de derechos de autor */
+  footer .pt-4 {
+    padding-top: 1rem;
+  }
+  
+  /* Media Queries para mayor responsividad */
+  @media (max-width: 640px) {
+    footer .sm\:flex-row {
+      flex-direction: column; /* En pantallas pequeñas, los elementos del pie se apilan */
+    }
+    
+    footer .sm\:justify-between {
+      justify-content: center;
+    }
+  
+    footer .sm\:items-center {
+      align-items: center;
+    }
+  
+    footer ul {
+      flex-direction: column; /* Los enlaces se apilan verticalmente en pantallas pequeñas */
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+  

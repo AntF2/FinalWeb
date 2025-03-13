@@ -13,6 +13,7 @@ import { FormularioRegistroComponent } from './components/registro/registro.comp
 import { TablaUsuariosComponent } from './components/tabla-usuarios/tabla-usuarios.component';
 import { CrudProductosComponent } from './pages/crud-productos/crud-productos.component';
 import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
+import { FacturaComponent } from './components/factura/factura.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,6 +21,7 @@ export const routes: Routes = [
   { path: 'contactos', component: ContactosComponent },
   { path: 'formulario', component: FormularioComponent },
   { path: 'carrito', component: CarritoComprasComponent},
+  { path: 'factura', component: FacturaComponent},
   { path: 'producto/:categoria/:id', component: ProductoComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: 'login', component: LoginComponent},

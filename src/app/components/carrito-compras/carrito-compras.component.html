@@ -1,4 +1,3 @@
-<!-- carrito-compras.component.html -->
 <div class="carrito-container p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
     <h2 class="text-3xl font-bold text-center text-gray-800">Carrito de Compras</h2>
 
@@ -26,5 +25,12 @@
         <p><strong>Subtotal:</strong> ${{ totales.subtotal }}</p>
         <p><strong>IVA (16%):</strong> ${{ totales.iva }}</p>
         <p><strong>Total:</strong> ${{ totales.total }}</p>
+    </div>
+
+    <!-- Botón para generar la factura -->
+    <div class="mt-6 text-center">
+        <button class="px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600" (click)="generarFactura()">
+            Generar Factura
+        </button>
     </div>
 </div>

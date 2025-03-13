@@ -1,0 +1,8 @@
+<div class="factura">
+    <h2>Factura</h2>
+    <div *ngFor="let producto of carrito">
+      <p>{{ producto.nombre }} - ${{ producto.precio }} x {{ producto.cantidad }} = ${{ producto.precio * producto.cantidad }}</p>
+    </div>
+    <h3>Total a pagar: ${{total}}</h3>
+  </div>
+  
